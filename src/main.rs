@@ -1,9 +1,5 @@
 use clap::Parser;
-
-use crate::{cli::Cli, commands::Commands};
-
-mod cli;
-mod commands;
+use sysgraph::{cli::Cli, commands::Commands};
 
 fn main() {
     let cli = Cli::parse();
